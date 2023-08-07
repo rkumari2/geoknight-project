@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@100;300;400;500;700&family=Space+Mono&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+        <script defer src="./index.js"></script>
+        <script defer src="./stats_update.js"></script>
+        <link rel="shortcut icon" href="./choice-icons/favicon.png" type="image/x-icon">
+        <title>Power-Ups</title>
+    </head>
+    <body>
+        <section id="categoriesContainer">
+            <h2>Power-Ups</h2>
+            <div id="categories">
+    
+                <button type="button" id="easyChoice">
+                    <div id="easy" class="choices">
+                        <!-- <img src="./choice_icons/rejuvenate.png" alt="" srcset=""> -->
+                        <ul>
+                            <!-- <li>Recover 8 HP </li> -->
+                            <li> </li>
+                        </ul>
+                    </div>
+                </button>
+    
+                <button type="button" id="medChoice">
+                    <div id="medium" class="choices">
+                        <!-- <img src="./choice_icons/polish.png" alt="" srcset=""> -->
+                        <ul>
+                            <!-- <li>Increase Max HP by 4 </li> -->
+                            <li> </li>
+                        </ul>
+                    </div>
+                </button>
+    
+                <button type="button" id="hardChoice">
+                    <div id="hard" class="choices">
+                        <!-- <img src="./choice_icons/sharpen.png" alt="" srcset=""> -->
+                        <ul>
+                            <!-- <li>Increase Attack by 3 </li> -->
+                            <li> </li>
+                        </ul>
+                    </div>
+                </button>
+            </div>
+        </section>
+
+        <!-- <section class="d-none d-md-flex" id="side-section"> -->
+        <section id="side-section">
+            <div class="char player" id="player"></div>
+            <div id="stats-disp">
+                <div id="text">
+                    <div id="hp-disp-grp">
+                        <span>HP</span>
+                        <span class="stat" id="currhp-disp"></span>
+                        <span> / </span>
+                        <span class="stat" id="maxhp-disp"></span>
+                        <br>
+                    </div>
+                
+                    <div>
+                        <p id="atk-disp-grp">
+                            <span>ATK</span>
+                            <span class="stat" id="atk-disp"></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

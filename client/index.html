@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeoKnight</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet"> 
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+    <script type="module" defer src="navigate.js"></script>
+</head>
+<body>
+    <section class="image"> 
+        <img class="bg-image" src="./home_bg.png" alt="abstract image of earth shattering">
+    </section>
+    <section class="menu">
+        <div class="logo_container">
+            <img class="logo" src="./logo_s.png" alt="">
+        </div>
+        <div class="btn">
+            <button class="start" id="start"> Start </button>
+            <button id="scoreboard" class="scoreboard"> Scoreboard </button>
+            <button id="credits" onclick="openPopup()" class="credits"> Rules </button>
+        </div>
+        <div class="popup" id="popup">
+            <h2>Rules</h2>
+            <p> Draw power from mending the shattered world, and crush adversaries hell-bent on thwarting your noble quest! </p>
+            <p>How to Play: <br>
+                The game cycles between 2 phases. <br> <br>
+                Mend the World <br>
+                Choose a power-up, then answer the question correctly to increase your stats! <br> <br>
+                Enemy Invasion <br>
+                Press the attack button to slay your enemies! <br> <br>
+                Put the pieces of the world back together while fending off enemies for as long as you can to attain a high score. Good luck, GeoKnight!</p>
+            <button type="button" id="ok-btn" onclick="closePopup()"> OK </button>
+        </div>
+
+        <script>
+            let popup = document.getElementById('popup')
+            function openPopup() {
+                popup.classList.add('open-popup')
+            }
+            function closePopup() {
+                popup.classList.remove('open-popup')
+            }
+        </script>
+    </section>
+    
+</body>
+</html>

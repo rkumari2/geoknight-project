@@ -1,0 +1,138 @@
+:root {
+    --primary-bg: #05041c; 
+    --main-btn: #E37100; 
+    --dark-orange: #c62e00;
+    --secondary-btn: #31A5D3; 
+    --tertiary-btn: #24A894;
+    --hover: #ffe367; 
+    --yellow-shadow: #f0c740;
+}
+
+
+body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-bg);
+    height: 100vh;
+    width: 70%;
+    flex-direction: column;
+    font-family: 'Roboto Mono', monospace;
+}
+
+#homepage{
+    position: absolute;
+    right: 2%;
+    top: 2%;
+    background-color: var(--main-btn);
+    padding: 20px 50px;
+    letter-spacing: 1.6px;
+    font-size: 1.6em;
+    border-radius: 10px;
+    box-shadow: 0 -5px 0 0 var(--dark-orange) inset;
+    transition: 0.1s ease-in-out;
+    color: white;
+}
+
+#homepage:hover{
+    background-color: var(--hover);
+    box-shadow: 0 -5px 0 0 var(--yellow-shadow) inset;
+    transition: 0.1s ease-in-out;
+    color: black;
+    cursor: pointer;
+}
+
+#scoreContainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+    height: 50%;
+    align-items: center;
+    /* background-color: #ffe367; */
+    width: 100%;
+    height: 100%;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 150px;
+    height: 50%;
+    align-items: center;
+    margin-top: 10px;
+    /* background-color: antiquewhite; */
+    width: 100%;
+    height: 100%;
+}
+
+.graphics {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-bg);
+    height: 100vh;
+    width: 40%;
+}
+
+img {
+    width: 600px;
+    margin-left: 200px;
+}
+
+#current-player {
+    font-size: 60px;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 0;
+    color: white;
+}
+
+h3 {
+    font-size: 30px;
+    color: white;
+}
+
+#username_input {
+    width: 25rem;   
+    height: 3.9rem;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 20px;
+    margin-top: 25px;
+    border: none;
+    border-radius: 5px;
+    padding-left: 20px;
+}
+
+#submit {
+    height: 4rem;
+    width: 12rem;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 20px;
+    background-color: var(--main-btn);
+    border: none;
+    margin-left: 10px;
+    border-radius: 5px;
+    box-shadow: 0 -5px 0 0 var(--dark-orange) inset;
+    transition: 0.1s ease-in-out;
+    color: white;
+}
+
+#submit:hover {
+    box-shadow: 0 -5px 0 0 var(--yellow-shadow) inset;
+    background-color: var(--hover);
+    transition: 0.1s ease-in-out;
+    color: black;
+    cursor: pointer;
+}

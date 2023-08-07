@@ -1,0 +1,65 @@
+:root {
+    --primary-bg: #05041c; 
+    --main-btn: #E37100; 
+    --dark-orange: #c62e00;
+    --secondary-btn: #31A5D3;
+    --blue-shadow: #266b86;
+    --tertiary-btn: #24A894;
+    --green-shadow: #1e6358;
+    --hover: #ffe367; 
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-bg);
+    color: white;
+    margin: 0;
+    flex-direction: column;
+    font-family: 'Roboto Mono', monospace;
+}
+
+h2 {
+    font-size: 30px;
+    background-color: var(--main-btn);
+    padding: 20px 50px;
+    border-radius: 10px;
+    box-shadow: 0 -5px 0 0 var(--dark-orange) inset;
+}
+
+li{
+    list-style: none;
+    font-size: 20px;
+}
+
+#scoreboard {
+    background-color: var(--secondary-btn);
+    padding: 20px 30px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 -5px 0 0 var(--blue-shadow) inset;
+}
+
+#homepage{
+    position: absolute;
+    right: 2%;
+    top: 2%;
+    background-color: var(--main-btn);
+    padding: 20px 50px;
+    letter-spacing: 1.6px;
+    font-size: 1.6em;
+    border-radius: 10px;
+    box-shadow: 0 -5px 0 0 var(--dark-orange) inset;
+    transition: 0.1s ease-in-out;
+    color: white;
+}
+
+#homepage:hover{
+    background-color: var(--hover);
+    box-shadow: 0 -5px 0 0 var(--yellow-shadow) inset;
+    transition: 0.1s ease-in-out;
+    color: black;
+    cursor: pointer;
+}
